@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { cn } from "../lib/utils";
 import { Menu, X } from "lucide-react";
+import { ThemeToggle } from "./ThemeToggle";
 
 const navItems = [
   { name: "Home", href: "#hero" },
@@ -16,7 +17,7 @@ export const NavBar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.screenY > 10);
+      setIsScrolled(window.scrollY > 10);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -32,7 +33,7 @@ export const NavBar = () => {
         isScrolled ? "py-3 pg-background/80 backdrop-blur-md shadow-xs" : "py-5"
       )}
     >
-      <div className="container flex items-center justify-between">
+      <div className="container flex items-center justify-between min-h-[60px]">
         <a
           href="#hero"
           className="text-xl font-bold text-primary flex items-center"
@@ -54,6 +55,9 @@ export const NavBar = () => {
               {item.name}
             </a>
           ))}
+          <div className="flex items-center">
+            <ThemeToggle />
+          </div>
         </div>
 
         {/* Mobile Version */}

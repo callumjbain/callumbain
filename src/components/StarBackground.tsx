@@ -58,7 +58,7 @@ export const StarBackground = () => {
   };
 
   const generateMeteors = () => {
-    const numberOfMeteors = 3;
+    const numberOfMeteors = 4;
 
     const newMeteors: MeteorType[] = [];
 
