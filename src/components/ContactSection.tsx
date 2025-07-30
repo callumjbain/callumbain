@@ -1,12 +1,4 @@
-import {
-  Linkedin,
-  LocateIcon,
-  MailIcon,
-  MapPin,
-  PhoneCall,
-  Send,
-} from "lucide-react";
-import { cn } from "../lib/utils";
+import { Linkedin, MailIcon, MapPin, PhoneCall } from "lucide-react";
 
 export const ContactSection = () => {
   return (

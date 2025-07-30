@@ -1,46 +1,157 @@
-# Getting Started with Create React App
+# Callum Bain - Personal Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, responsive portfolio website showcasing my work as a front-end developer. Built with React, TypeScript, and Tailwind CSS, featuring a cosmic-themed design with smooth animations and interactive elements.
 
-## Available Scripts
+## 🌟 Features
 
-In the project directory, you can run:
+- **Modern Design**: Clean, cosmic-themed interface with gradient effects and animations
+- **Responsive Layout**: Fully responsive design that works on all devices
+- **Interactive Components**: Smooth animations, hover effects, and dynamic content
+- **Dark Theme**: Elegant dark theme with cosmic background effects
+- **Performance Optimized**: Built with Vite for fast development and optimized builds
+- **Type Safe**: Full TypeScript implementation for better code quality
 
-### `npm start`
+## 🚀 Live Demo
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Visit the live site: [callumbain.me](https://callumbain.me)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## 🛠️ Tech Stack
 
-### `npm test`
+- **Frontend**: React 19, TypeScript
+- **Styling**: Tailwind CSS 4.x
+- **Build Tool**: Vite
+- **Routing**: React Router DOM
+- **Icons**: Lucide React
+- **UI Components**: Radix UI (Toast)
+- **Deployment**: GitHub Pages
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 📁 Project Structure
 
-### `npm run build`
+```
+src/
+├── components/          # Reusable UI components
+│   ├── AboutSection.tsx    # About me section
+│   ├── ContactSection.tsx  # Contact form and info
+│   ├── Footer.tsx         # Site footer
+│   ├── HeroSection.tsx    # Landing hero section
+│   ├── NavBar.tsx         # Navigation bar
+│   ├── ProjectsSection.tsx # Featured projects
+│   ├── SkillsSection.tsx  # Skills showcase
+│   ├── StarBackground.tsx # Animated background
+│   └── ThemeToggle.tsx    # Theme switcher
+├── pages/              # Page components
+│   ├── Home.tsx          # Main homepage
+│   └── NotFound.tsx      # 404 page
+├── lib/                # Utility functions
+│   └── utils.ts          # Helper utilities
+├── App.tsx             # Main app component
+└── index.tsx           # App entry point
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🏃‍♂️ Getting Started
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Prerequisites
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Node.js (version 16 or higher)
+- npm or yarn
 
-### `npm run eject`
+### Installation
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+1. Clone the repository:
+```bash
+git clone https://github.com/callumbain/callumbain.git
+cd callumbain
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2. Install dependencies:
+```bash
+npm install
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+3. Start the development server:
+```bash
+npm run dev
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+4. Open your browser and visit `http://localhost:3000`
 
-## Learn More
+## 📜 Available Scripts
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build locally
+- `npm run deploy` - Deploy to GitHub Pages
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🎨 Customization
+
+### Styling
+The project uses Tailwind CSS with custom CSS variables for theming. Key styling files:
+- `src/index.css` - Global styles and CSS variables
+- `src/App.css` - Component-specific styles
+
+### Content
+Update the following components to customize content:
+- [`HeroSection.tsx`](src/components/HeroSection.tsx) - Personal introduction
+- [`AboutSection.tsx`](src/components/AboutSection.tsx) - About me content
+- [`ProjectsSection.tsx`](src/components/ProjectsSection.tsx) - Featured projects
+- [`SkillsSection.tsx`](src/components/SkillsSection.tsx) - Skills and expertise
+- [`ContactSection.tsx`](src/components/ContactSection.tsx) - Contact information
+
+### Projects
+Edit the `projects` array in [`ProjectsSection.tsx`](src/components/ProjectsSection.tsx:3) to add your own projects:
+
+```typescript
+const projects = [
+  {
+    id: 1,
+    title: "Your Project",
+    description: "Project description",
+    image: "/projects/your-image.png",
+    tags: ["React", "TypeScript", "Tailwind"],
+    url: "https://your-project.com",
+  },
+  // Add more projects...
+];
+```
+
+### Skills
+Update the `skills` array in [`SkillsSection.tsx`](src/components/SkillsSection.tsx:4) to reflect your expertise:
+
+```typescript
+const skills = [
+  { name: "React", level: 90, category: "frontend" },
+  { name: "TypeScript", level: 85, category: "frontend" },
+  // Add more skills...
+];
+```
+
+## 🚀 Deployment
+
+The site is configured for deployment to GitHub Pages:
+
+1. Update the `homepage` field in [`package.json`](package.json:5) with your domain
+2. Run the deployment command:
+```bash
+npm run deploy
+```
+
+## 🤝 Contributing
+
+This is a personal portfolio project, but suggestions and feedback are welcome! Feel free to:
+- Open an issue for bugs or suggestions
+- Submit a pull request for improvements
+- Fork the project for your own portfolio
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## 📞 Contact
+
+- **Website**: [callumbain.me](https://callumbain.me)
+- **Email**: [contact@callumbain.me](mailto:contact@callumbain.me)
+- **GitHub**: [@callumbain](https://github.com/callumbain)
+
+---
+
+⭐ If you found this project helpful, please consider giving it a star!
