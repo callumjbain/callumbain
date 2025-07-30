@@ -145,14 +145,6 @@ The site is configured for deployment to GitHub Pages:
 npm run deploy
 ```
 
-## 🤝 Contributing
-
-This is a personal portfolio project, but suggestions and feedback are welcome! Feel free to:
-
-- Open an issue for bugs or suggestions
-- Submit a pull request for improvements
-- Fork the project for your own portfolio
-
 ---
 
 ⭐ If you found this project helpful, please consider giving it a star!
