@@ -153,10 +153,6 @@ This is a personal portfolio project, but suggestions and feedback are welcome! 
 - Submit a pull request for improvements
 - Fork the project for your own portfolio
 
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
-
 ---
 
 ⭐ If you found this project helpful, please consider giving it a star!
