@@ -58,17 +58,20 @@ src/
 ### Installation
 
 1. Clone the repository:
+
 ```bash
 git clone https://github.com/callumbain/callumbain.git
 cd callumbain
 ```
 
 2. Install dependencies:
+
 ```bash
 npm install
 ```
 
 3. Start the development server:
+
 ```bash
 npm run dev
 ```
@@ -85,12 +88,16 @@ npm run dev
 ## 🎨 Customization
 
 ### Styling
+
 The project uses Tailwind CSS with custom CSS variables for theming. Key styling files:
+
 - `src/index.css` - Global styles and CSS variables
 - `src/App.css` - Component-specific styles
 
 ### Content
+
 Update the following components to customize content:
+
 - [`HeroSection.tsx`](src/components/HeroSection.tsx) - Personal introduction
 - [`AboutSection.tsx`](src/components/AboutSection.tsx) - About me content
 - [`ProjectsSection.tsx`](src/components/ProjectsSection.tsx) - Featured projects
@@ -98,6 +105,7 @@ Update the following components to customize content:
 - [`ContactSection.tsx`](src/components/ContactSection.tsx) - Contact information
 
 ### Projects
+
 Edit the `projects` array in [`ProjectsSection.tsx`](src/components/ProjectsSection.tsx:3) to add your own projects:
 
 ```typescript
@@ -115,6 +123,7 @@ const projects = [
 ```
 
 ### Skills
+
 Update the `skills` array in [`SkillsSection.tsx`](src/components/SkillsSection.tsx:4) to reflect your expertise:
 
 ```typescript
@@ -131,6 +140,7 @@ The site is configured for deployment to GitHub Pages:
 
 1. Update the `homepage` field in [`package.json`](package.json:5) with your domain
 2. Run the deployment command:
+
 ```bash
 npm run deploy
 ```
@@ -138,6 +148,7 @@ npm run deploy
 ## 🤝 Contributing
 
 This is a personal portfolio project, but suggestions and feedback are welcome! Feel free to:
+
 - Open an issue for bugs or suggestions
 - Submit a pull request for improvements
 - Fork the project for your own portfolio
@@ -145,12 +156,6 @@ This is a personal portfolio project, but suggestions and feedback are welcome! 
 ## 📄 License
 
 This project is open source and available under the [MIT License](LICENSE).
-
-## 📞 Contact
-
-- **Website**: [callumbain.me](https://callumbain.me)
-- **Email**: [contact@callumbain.me](mailto:contact@callumbain.me)
-- **GitHub**: [@callumbain](https://github.com/callumbain)
 
 ---
 
